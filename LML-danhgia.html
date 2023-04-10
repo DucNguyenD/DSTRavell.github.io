@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<!-- My CSS -->
+	<link rel="stylesheet" href="css/quanlytour.css">
+	<link rel="icon" href="images/logo.png">
+    <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css'>
+	<title>HDV Lâm Mỹ Lài</title>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+	<script>
+		var btn = document.querySelector('.btn');
+
+// Thêm sự kiện click vào button
+btn.addEventListener('click', function() {
+  alert('You clicked me!');
+});v
+	</script>
+	<style>
+div.stars {
+  width: 270px;
+  display: inline-block;
+}
+ 
+input.star { display: none; }
+ 
+label.star {
+  float: right;
+  padding: 5px;
+  font-size: 36px;
+  color: #FD4;
+  transition: all .2s;
+}
+ 
+input.star:checked ~ label.star:before {
+  content: '\f005';
+  color: #FD4;
+  transition: all .25s;
+}
+ 
+input.star-5:checked ~ label.star:before {
+  color: #FE7;
+  text-shadow: 0 0 20px #952;
+}
+ 
+input.star-1:checked ~ label.star:before { color: #F62; }
+ 
+label.star:hover { transform: rotate(-15deg) scale(1.3); }
+ 
+label.star:before {
+  content: '\f006';
+  font-family: FontAwesome;
+}
+	</style>
+</head>
+<body>
+
+
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="#" class="brand">
+			<img src="images/logo.png" alt="" class='bx bxs-smile' width="100px" height="" style="margin-top: 80px;">
+			<span class="text" style="font-size: 22px; margin-top: 80px;">DS TRAVEL</span>
+		</a>
+		<ul class="side-menu top">
+			<li>
+				<a href="TRANGCHU1.html">
+					<i class='bx bxs-dashboard' ></i>
+					<span class="text">Trang Chủ</span>
+				</a>
+			</li>
+			<li>
+				<a href="QuangLyTour.html">
+					<i class='bx bxs-shopping-bag-alt' ></i>
+					<span class="text">Quản Lý Tour</span>
+				</a>
+			</li>
+			<li class="active">
+				<a href="QLHUONGDV.html">
+					<svg style="margin-left: 10px;margin-right:5.5px;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M16.604 11.048a5.67 5.67 0 0 0 .751-3.44c-.179-1.784-1.175-3.361-2.803-4.44l-1.105 1.666c1.119.742 1.8 1.799 1.918 2.974a3.693 3.693 0 0 1-1.072 2.986l-1.192 1.192l1.618.475C18.951 13.701 19 17.957 19 18h2c0-1.789-.956-5.285-4.396-6.952z"/><path fill="currentColor" d="M9.5 12c2.206 0 4-1.794 4-4s-1.794-4-4-4s-4 1.794-4 4s1.794 4 4 4zm0-6c1.103 0 2 .897 2 2s-.897 2-2 2s-2-.897-2-2s.897-2 2-2zm1.5 7H8c-3.309 0-6 2.691-6 6v1h2v-1c0-2.206 1.794-4 4-4h3c2.206 0 4 1.794 4 4v1h2v-1c0-3.309-2.691-6-6-6z"/></svg>
+					<span class="text">Quản Lý Hướng Dẫn Viên</span>
+				</a>
+			</li>
+			<li>
+				<a href="THEODOILICHTRINH.html">
+					<i class='bx' ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M4 21h1V8H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2zM20 8h-7l1.122-3.368A2 2 0 0 0 12.225 2H12L7 7.438V21h11l3.912-8.596L22 12v-2a2 2 0 0 0-2-2z"/></svg></i>
+					<span class="text">Theo Dõi Tour </span>
+				</a>
+			</li>
+			
+		</ul>
+		<ul class="side-menu">
+			<li>
+				<a href="LOGIN.html">
+					<i class='bx bxs-log-out-circle' style="color:rgb(244, 10, 10) ;" ></i>
+					<span class="text" style="color: rgb(244, 10, 10);">Đăng xuất</span>
+					
+				</a>
+			</li>
+			<li>
+				
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+			<a href="#" class="nav-link">Tìm kiếm</a>
+			<form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Search...">
+					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+				</div>
+			</form>
+			<input type="checkbox" id="switch-mode" hidden>
+			<label for="switch-mode" class="switch-mode"></label>
+			<a href="#" class="notification">
+				<i class='bx bxs-bell' ></i>
+				<span class="num">8</span>
+			</a>
+			<a href="#" class="profile">
+				<span><b>Dek</b></span>
+				<img style="display: inline;" src="images/Dek.jpg">
+				
+			</a>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+      <div class="bg-white shadow rounded-lg">
+        
+        
+    <div class="fixed w-full h-full top-0 left-0 z-40" style="display: none;">
+        
+    <div class="bg-black w-full h-full opacity-70"></div> <div class="flex w-full h-full absolute z-50 top-0 left-0  justify-center items-center"><div class="bg-white rounded-lg w-96 p-5">
+        
+    <div class="text-center py-10"><img src="/confirm.jpg" class="w-24 h-24 inline-block mx-auto"> <p class="text-center text-xl text-gray-700">Bạn có chắc với tác vụ này?</p></div> <div class="flex items-center justify-center gap-5"><button type="button" class="flex justify-center items-center w-12 h-12 rounded-full border border-gray-300 bg-white text-gray-300 hover:bg-gray-300 hover:text-white"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></button> <button type="button" class="flex justify-center items-center w-12 h-12 rounded-full border border-green-500 bg-white text-green-500 hover:bg-green-500 hover:text-white"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></button></div></div></div></div> 
+    <div style="width:1110px !important;"><div class="px-4 py-3 r bg-gray-200 rounded-lg mt-4" ><div class="flex items-center"><img src="https://kenh14cdn.com/thumb_w/660/203336854389633024/2022/7/21/28754874410879198118263111542003351356132181n-1658407435848564446284.jpg" class="rounded-full w-20 h-20"> <div class="ml-2"><span class="text-white text-sm block"><font style="vertical-align: inherit;"><font style="vertical-align: inherit; font-size: 30px; color: black">
+        Lâm Mỹ Lài
+        </font></font></span> <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">hướng dẫn viên</font></font></span></div> <div style="padding: 20px;"></div>
+        <div>
+            <div style="font-size: 30px; color: rgb(230, 37, 7); margin-right: 50px; margin-left: 10px;">4.8 <span style="font-size: 16px;">Trên 5</span> </div>
+            <div style="display: inline !important; width: 100px;">
+                <span style="font-size: 21px; font-weight:900; margin-left: 9px; color:rgb(230, 37, 7);">★ ★ ★ ★ ★</span>
+                
+            </div>
+        </div>
+        <div class="stars" style="display: inline !important">
+            <form action="">
+              <input class="star star-5" id="star-5" type="radio" name="star"/>
+              <label class="star star-5" for="star-5"></label>
+              <input class="star star-4" id="star-4" type="radio" name="star"/>
+              <label class="star star-4" for="star-4"></label>
+              <input class="star star-3" id="star-3" type="radio" name="star"/>
+              <label class="star star-3" for="star-3"></label>
+              <input class="star star-2" id="star-2" type="radio" name="star"/>
+              <label class="star star-2" for="star-2"></label>
+              <input class="star star-1" id="star-1" type="radio" name="star"/>
+              <label class="star star-1" for="star-1"></label>
+              
+            </form>
+            
+          </div><span style="margin-left: 100px; margin-top: 20px;" class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">Đã hướng dẫn 1 tour</span></div>
+          
+        <div class="ml-auto flex items-center gap-2">
+          </a></div></h3> <div class="flex border-b border-gray-300 px-5"><div class="px-3 py-2 hover:text-blue-500 cursor-pointer "><a href="LML-Chung.html">Chung</a></div> <div class="px-3 py-2 hover:text-blue-500 cursor-pointer "><a href="LML-Thamgia.html">Tour đã tham gia hướng dẫn</a></div> <div class="px-3 py-2 hover:text-blue-500 cursor-pointer border-b-2 border-blue-500 text-blue-500 font-semibold"><a href="LML-danhgia.html">Đánh giá</a></div></div> <form class="grid grid-cols-12 gap-5 p-5" ><div class="col-span-8 flex flex-col gap-5">
+           
+            <div style="width: 1060px; font-size: 18px;"><label class="font-semibold text-gray-700 mb-2 block">Nhận xét-Góp ý ngắn : </label> <textarea rows="5" class="form-text px-3 py-2 w-full rounded-lg border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50"></textarea></div>
+
+
+
+
+
+            <div style="font-size: 20px; color: black;"> <b>Đánh giá của du khách với hướng dẫn viên</b></div>
+            <div  id="Tokyo" class="tabcontent" style="display: block; text-align: center; margin-left: 300px;">
+                <span style="font-size: 17px;">Đánh giá gần đây: </span>
+                
+                <div class="col-xs-12 customerReviewHeader v-margin-bottom-10">
+                    <button style="padding: 10px 20px;border-radius: 10px; background-color: rgba(26, 205, 23, 0.563);"> 9.5/10</button>
+                    <span style="font-size: 20px;">Tuyệt vời /</span>
+                    <span class="scoreReviewQuantity verticalLine"><span itemprop="reviewCount">3</span> đánh giá</span>
+                </div>
+                <div style="padding: 1px 5px; background-color: rgb(109, 107, 107); margin-top: 5px;margin-bottom: 10px;"></div>
+                
+              
+            
+            <div class="binhluan">
+                <div class="hinhanhcmt"></div>
+                <div style="display: inline;">
+                  <div style="background-image: url(data:image/jpeg;base64,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); width: 50px; height: 50px; background-repeat: no-repeat;background-size: cover; border-radius: 50%; margin-top: 20px; margin-left: 44% "></div>
+                  <b>Hoàng Thị Mộng Mơ</b>
+                </div>
+                <p class="n">2/4/2023</p>
+                <span style="font-size: 21px; font-weight:900; color:#FD4">★ ★ ★ ★ ★</span>
+                <p>Hướng dẫn viên nhiệt tình, vui vẻ và hòa đồng, giải thích và giới thiệu rõ ràng về điểm du lịch</p>
+            </div>
+            <div style="padding: 0.2px 2px; background-color: rgb(175, 175, 175); margin-top: 5px;margin-bottom: 10px;"></div>
+            <div class="binhluan">
+                <div class="hinhanhcmt"></div>
+                <div style="display: inline;">
+                  <div style="background-image: url(https://cdn-img.thethao247.vn/origin_768x0/storage/files/linhseo/2022/06/21/9dhucpmyas-1000x1000-1655780687.jpg); width: 50px; height: 50px; background-repeat: no-repeat;background-size: cover; border-radius: 50%; margin-top: 20px; margin-left: 44% "></div>
+                  <b>Nguyễn Huyền Hảo</b>
+                </div>
+                <p class="n">2/4/2023</p>
+                <span style="font-size: 21px; font-weight:900; color:#FD4">★ ★ ★ ★ ★</span>
+                <p>Hướng dẫn viên nhiệt tình, vui vẻ và hòa đồng, giải thích và giới thiệu rõ ràng về điểm du lịch</p>
+            </div>
+            <div style="padding: 0.2px 2px; background-color: rgb(175, 175, 175); margin-top: 5px;margin-bottom: 10px;"></div>
+            <div class="binhluan">
+                <div class="hinhanhcmt"></div>
+                <div style="display: inline;">
+                  <div style="background-image: url(https://vtv1.mediacdn.vn/thumb_w/650/2017/leejongsuk-lrperem-1491639672959.jpg); width: 50px; height: 50px; background-repeat: no-repeat;background-size: cover; border-radius: 50%; margin-top: 20px; margin-left: 44% "></div>
+                  <b>Trần Tương Dễ</b>
+                </div>
+                <p class="n">2/6/2023</p>
+                <span style="font-size: 21px; font-weight:900; color:#FD4">★ ★ ★ ★ ★</span>
+                <p>Hướng dẫn viên nhiệt tình, vui vẻ và hòa đồng, giải thích và giới thiệu rõ ràng về điểm du lịch, ăn mặt lịch sự gọn gàng và đặc biệt thuyết trình về văn hóa cũng như đặc điểm của địa điểm du lịch một cách quen thuộc gần gũi</p>
+            </div>
+            
+                </div></div></div></div></div></form> <div class="p-5 bg-gray-50 rounded-b-lg"><div class="flex items-center"><a href="QLHUONGDV.html" class="bg-white border border-gray-300 inline-block text-gray-800 rounded-lg px-3 py-2 hover:bg-gray-200 nuxt-link-active">Trở về</a> <div class="ml-auto"><button type="button" class="bg-blue-500 text-white rounded-lg px-3 py-2 hover:bg-blue-600" fdprocessedid="ewu5h">Lưu thay đổi</button></div></div></div></div>
+			
+		</main>
+		<!-- MAIN -->
+	</section>
+	<!-- CONTENT -->
+	
+
+	<script src="js/trangchu.js"></script>
+    
+</body>
+<script src="https://kit.fontawesome.com/98b8852af0.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+<script language="Javascript" src="/JavaScript/giohang.js"></script>
+<script>
+    const ctx = document.getElementById('myChart').getContext('2d');
+const earning = document.getElementById('earning').getContext('2d');
+const myChartt = new Chart(ctx, {
+    type: 'polarArea',
+    data: {
+        labels: ['Website', 'Youtube', 'Facebook'],
+        datasets: [{
+            label: 'Traffic Source',
+            data: [5670, 2850, 3910],
+            backgroundColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)'
+            ],
+
+        }]
+    },
+    options: {
+        responsive: true,
+    }
+});
+
+const myChart = new Chart(earning, {
+    type: 'bar',
+    data: {
+        labels: ['Tháng 1', 'Tháng 2', 'Tháng 3', 'Tháng 4', 'Tháng 5', 'Tháng 6', 'Tháng 7', 'Tháng 8', 'Tháng 9', 'Tháng 10', 'Tháng 11', 'Tháng 12', ],
+        datasets: [{
+            label: 'Thu nhập',
+            data: [99200, 90090, 30000, 55400, 6200, 36000, 98600, 15578, 85622, 82044, 60285, 24000],
+            backgroundColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)',
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+        }]
+    },
+    options: {
+        options: {
+            responsive: true,
+        }
+    }
+});
+  /// toggle///
+  let toggle = document.querySelector('.toggle');
+  let navigation = document.querySelector('.navigation');
+  let main = document.querySelector('.main');
+
+  toggle.onclick = function () {
+    navigation.classList.toggle('active')
+    main.classList.toggle('active')
+  }
+  /////
+  let list = document.querySelectorAll('.navigation li');
+
+  function activeLink() {
+    list.forEach((item) =>
+      item.classList.remove('hovered'));
+    this.classList.add('hovered');
+  }
+  list.forEach((item) =>
+    item.addEventListener('mouseover', activeLink));
+</script>
+</html>

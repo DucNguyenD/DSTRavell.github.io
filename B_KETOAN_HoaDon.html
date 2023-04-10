@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<!-- My CSS -->
+
+	<link rel="stylesheet" href="css/quanlytour.css">
+	<link rel="icon" href="images/logo.png">
+	<title>Kế Toán - Hóa Đơn</title>
+	<script>
+		var btn = document.querySelector('.btn');
+
+// Thêm sự kiện click vào button
+btn.addEventListener('click', function() {
+  alert('You clicked me!');
+});v
+	</script>
+	<style>
+	</style>
+</head>
+<body>
+
+
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="#" class="brand">
+			<img src="images/logo.png" alt="" class='bx bxs-smile' width="100px" height="" style="margin-top: 80px;">
+			<span class="text" style="font-size: 22px; margin-top: 80px;">DS TRAVEL</span>
+		</a>
+		<ul class="side-menu top">
+			<li >
+				<a href="B_KETOAN_Chung.html">
+					<i class='bx bxs-dashboard' ></i>
+					<span class="text">Trang Chủ</span>
+				</a>
+			</li>
+			<li class="active">
+				<a href="B_KETOAN_HoaDon.html">
+					<i class="bx"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48"><mask id="ipSTransactionOrder0"><g fill= "none" stroke-linejoin="round" stroke-width="4"><rect width="30" height="36" x="9" y="8" fill="#fff" stroke="# fff" rx="2"/><path stroke="#fff" stroke-linecap="round" d="M18 4v6m12-6v6"/><path stroke="#000" stroke-linecap="round" d ="M16 19h16m-16 8h12m-12 8h8"/></g></mask><path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipSTransactionOrder0)"/></svg></i>
+					<span class="text">Hóa Đơn</span>
+				</a>
+			</li>
+			<li>
+				<a href="B_KETOAN_LichGD.html">
+					<i class='bx' ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m13 11.6l2.5 2.5q.275.275.275.7t-.275.7q-.275.275-.7.275t-.7-.275l-2.8-2.8q-.15-.15-.225-.337T11 11.975V8q0-.425.288-.713T12 7q.425 0 .713.288T13 8v3.6ZM12 21q-3.025 0-5.425-1.788T3.35 14.55q-.125-.45.088-.85t.662-.5q.425-.1.763.188t.462.712q.65 2.2 2.513 3.55T12 19q2.925 0 4.963-2.038T19 12q0-2.925-2.038-4.963T12 5q-1.725 0-3.225.8T6.25 8H8q.425 0 .713.288T9 9q0 .425-.288.713T8 10H4q-.425 0-.713-.288T3 9V5q0-.425.288-.713T4 4q.425 0 .713.288T5 5v1.35q1.275-1.6 3.113-2.475T12 3q1.875 0 3.513.713t2.85 1.924q1.212 1.213 1.925 2.85T21 12q0 1.875-.713 3.513t-1.924 2.85q-1.213 1.212-2.85 1.925T12 21Z"/></svg></i>
+					<span class="text">Lịch Sử Giao Dịch</span>
+				</a>
+			</li>
+			
+		</ul>
+		<ul class="side-menu">
+			<li>
+				<a href="LOGIN.html">
+					<i class='bx bxs-log-out-circle' style="color:rgb(244, 10, 10) ;" ></i>
+					<span class="text" style="color: rgb(244, 10, 10);">Đăng xuất</span>
+					
+				</a>
+			</li>
+			<li>
+				
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+			<a href="#" class="nav-link">Tìm kiếm</a>
+			<form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Search...">
+					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+				</div>
+			</form>
+			<input type="checkbox" id="switch-mode" hidden>
+			<label for="switch-mode" class="switch-mode"></label>
+			<a href="#" class="notification">
+				<i class='bx bxs-bell' ></i>
+				<span class="num">8</span>
+			</a>
+			<a href="#" class="profile">
+                <span><b>Lyna</b></span>
+				<img style="display: inline" src="images/Lyna.jpg">
+				
+			</a>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+			<div class="px-10 py-5"><div class="flex flex-col gap-5"><h2 class="text-2xl text-gray-800 flex items-center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><b>Hóa Đơn</b>
+			</font></font><a href="B_KETOAN_Taohoadon.html" class="flex items-center hover:bg-blue-600 text-base ml-auto bg-blue-500 px-3 py-2 rounded-lg text-white"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 mr-1"><path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd"></path></svg><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tạo Hóa Đơn
+			</font></font></a></h2> <div class="col-span-4 bg-white rounded-lg shadow-sm p-5 grid grid-cols-4 gap-5"><div><h3 class="font-semibold mb-2 text-gray-700">
+            <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;"> Mã tour</font></font></h3> <input type="text" class="form-select px-3 py-2 w-full rounded-full border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50" fdprocessedid="ciqmik">
+            </div> 
+            <div><h3 class="font-semibold mb-2 text-gray-700"><font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Du khách</font></font></h3> <input type="text" class="form-select px-3 py-2 w-full rounded-full border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50" fdprocessedid="ciqmik">
+            
+            
+                </div> 
+            <div><h3 class="font-semibold mb-2 text-gray-700"><font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">Thanh toán</font></font></h3> <input type="text" class="form-select px-3 py-2 w-full rounded-full border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50" fdprocessedid="ciqmik">
+                
+            </div>
+            
+            <div><h3 class="font-semibold mb-2 text-gray-700"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tình trạng</font></font></h3> <select class="form-select px-3 py-2 w-full rounded-full border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50" fdprocessedid="m270x4"><option value=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">all</font></font></option> <option value=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Đặt dịch vụ</font></font></option><option value=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Kết thúc</font></font></option></font></option></select></div><div class="col-span-4 flex items-center gap-2"><button type="button" class="border text-white bg-blue-500 block rounded-lg px-3 py-2 hover:bg-blue-600" fdprocessedid="x5nmk">
+                
+                <font style="vertical-align: inherit; display: inline;"><font style="vertical-align: inherit; display: inline;">
+                Tìm kiếm
+			  </font></font></button> <button type="button" class="border border-gray-300 text-gray-500 block rounded-lg px-3 py-2 hover:text-gray-700 hover:border-gray-700" fdprocessedid="6qii6s"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+				Làm mới bộ lọc
+			  </font></font></button>
+              
+            </div>
+          
+           
+           
+            
+       
+            
+            
+            </div></div>	
+            <div class="table-data">
+                <div class="order">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50px;">STT</th>
+                                <th style="width: 100px;">Mã tour</th>
+                                <th>Du khách</th>
+                                <th style="width: 120px;">Trạng thái</th>
+                                <th style="width: 150px;">Giá trị đơn hàng</th>
+                                <th style="width: 200px;">Thanh toán</th>
+                                <th>Tình trạng</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    SG5
+                                </td>
+                             
+                                <td style="color: rgb(15, 12, 172);">Phạm Lão</td>
+                                <td><span class="status pending">Chờ xử lý</span></td>
+                                <td>10.000.000đ</td>
+                                <td><span class="status pending" style="background-color: rgb(224, 40, 40);">Chưa thanh toán</span></td>
+                               <td>Đặt dịch vụ </td>
+                               <td></td>
+                                <td><span class="status completed" style="background-color: rgb(49, 157, 157);"><a href="B_KeToan_QUanlyhoadon.html" style="color: rgb(251, 255, 250);">Xác nhận</a></span></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>
+                                    SG5
+                                </td>
+                             
+                                <td style="color: rgb(15, 12, 172);">Hoàn Tuyên</td>
+                                <td><span class="status pending" style="background-color: #3c91e6;">Đã xử lý</span></td>
+                                <td>12.000.000đ</td>
+                                <td><span class="status pending" style="background-color: rgb(53, 187, 84);">Đã thanh toán</span></td>
+                               <td>Kết thúc</td>
+                               <td></td>
+                                <td><span class="status completed" style="background-color: rgb(49, 157, 157);"><a href="B_KETOAN_HOantuyen.html" style="color: rgb(251, 255, 250);">Xác nhận</a></span></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>
+                                    SG5
+                                </td>
+                             
+                                <td style="color: rgb(15, 12, 172);">Hoàn Tuyên</td>
+                                <td><span class="status pending" style="background-color: #3c91e6;">Đã xử lý</span></td>
+                                <td>12.000.000đ</td>
+                                <td><span class="status pending" style="background-color: rgb(53, 187, 84);">Đã thanh toán</span></td>
+                               <td>Kết thúc</td>
+                               <td></td>
+                                <td><span class="status completed" style="background-color: rgb(49, 157, 157);"><a href="B_KETOAN_HOantuyen.html" style="color: rgb(251, 255, 250);">Xác nhận</a></span></td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    SG5
+                                </td>
+                             
+                                <td style="color: rgb(15, 12, 172);">Phạm Lão</td>
+                                <td><span class="status pending">Chờ xử lý</span></td>
+                                <td>10.000.000đ</td>
+                                <td><span class="status pending" style="background-color: rgb(224, 40, 40);">Chưa thanh toán</span></td>
+                               <td>Đặt dịch vụ </td>
+                               <td></td>
+                                <td><span class="status completed" style="background-color: rgb(49, 157, 157);"><a href="B_KeToan_QUanlyhoadon.html" style="color: rgb(251, 255, 250);">Xác nhận</a></span></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>
+                                    SG5
+                                </td>
+                             
+                                <td style="color: rgb(15, 12, 172);">Hoàn Tuyên</td>
+                                <td><span class="status pending" style="background-color: #3c91e6;">Đã xử lý</span></td>
+                                <td>12.000.000đ</td>
+                                <td><span class="status pending" style="background-color: rgb(53, 187, 84);">Đã thanh toán</span></td>
+                               <td>Kết thúc</td>
+                               <td></td>
+                                <td><span class="status completed" style="background-color: rgb(49, 157, 157);"><a href="B_KETOAN_HOantuyen.html" style="color: rgb(251, 255, 250);">Xác nhận</a></span></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>
+                                    SG5
+                                </td>
+                             
+                                <td style="color: rgb(15, 12, 172);">Hoàn Tuyên</td>
+                                <td><span class="status pending" style="background-color: #3c91e6;">Đã xử lý</span></td>
+                                <td>12.000.000đ</td>
+                                <td><span class="status pending" style="background-color: rgb(53, 187, 84);">Đã thanh toán</span></td>
+                               <td>Kết thúc</td>
+                               <td></td>
+                                <td><span class="status completed" style="background-color: rgb(49, 157, 157);"><a href="B_KETOAN_HOantuyen.html" style="color: rgb(251, 255, 250);">Xác nhận</a></span></td>
+                            </tr>
+                            
+
+                            
+                        </tbody>
+                    </table>
+                </div>	
+		</div>
+
+
+
+          
+		</main>
+		<!-- MAIN -->
+	</section>
+	<!-- CONTENT -->
+	
+
+	<script src="js/trangchu.js"></script>
+</body>
+<script src="https://kit.fontawesome.com/98b8852af0.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+<script language="Javascript" src="/JavaScript/giohang.js"></script>
+<script>
+    const ctx = document.getElementById('myChart').getContext('2d');
+const earning = document.getElementById('earning').getContext('2d');
+const myChartt = new Chart(ctx, {
+    type: 'polarArea',
+    data: {
+        labels: ['Website', 'Youtube', 'Facebook'],
+        datasets: [{
+            label: 'Traffic Source',
+            data: [5670, 2850, 3910],
+            backgroundColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)'
+            ],
+
+        }]
+    },
+    options: {
+        responsive: true,
+    }
+});
+
+const myChart = new Chart(earning, {
+    type: 'bar',
+    data: {
+        labels: ['Tháng 1', 'Tháng 2', 'Tháng 3', 'Tháng 4', 'Tháng 5', 'Tháng 6', 'Tháng 7', 'Tháng 8', 'Tháng 9', 'Tháng 10', 'Tháng 11', 'Tháng 12', ],
+        datasets: [{
+            label: 'Thu nhập',
+            data: [99200, 90090, 30000, 55400, 6200, 36000, 98600, 15578, 85622, 82044, 60285, 24000],
+            backgroundColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)',
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+        }]
+    },
+    options: {
+        options: {
+            responsive: true,
+        }
+    }
+});
+  /// toggle///
+  let toggle = document.querySelector('.toggle');
+  let navigation = document.querySelector('.navigation');
+  let main = document.querySelector('.main');
+
+  toggle.onclick = function () {
+    navigation.classList.toggle('active')
+    main.classList.toggle('active')
+  }
+  /////
+  let list = document.querySelectorAll('.navigation li');
+
+  function activeLink() {
+    list.forEach((item) =>
+      item.classList.remove('hovered'));
+    this.classList.add('hovered');
+  }
+  list.forEach((item) =>
+    item.addEventListener('mouseover', activeLink));
+</script>
+</html>
